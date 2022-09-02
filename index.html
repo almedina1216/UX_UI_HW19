@@ -17,7 +17,7 @@
             <nav>
                 <ul id="menuList">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Work</a></li>
+                    <li><a href="#my-work-container">Work</a></li>
                     <li><a href="aboutMe.html">About</a></li>
                     <li><a href="">Resume</a></li>
                 </ul>
@@ -97,24 +97,8 @@
             <div id="footer-year">2022</div>
         </footer>
     </div>
-    <script>
-
-        var menuList = document.getElementById("menuList");
-
-        menuList.style.maxHeight = "0px";
-
-        function togglemenu() {
-
-            if (menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "140px";
-            }
-            else {
-                menuList.style.maxHeight = "0px";
-            }
-        }
-
-    </script>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>
