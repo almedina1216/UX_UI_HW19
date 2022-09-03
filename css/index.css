@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-html {
-    scroll-behavior: smooth;
-  }
+
 body {
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
@@ -18,6 +16,11 @@ body {
     align-items: center;
 }
 
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
 #header-nav {
     max-width: 100vw;
     height: 15vh;
@@ -25,7 +28,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+#FCOCmockup{
 
+}
 
 
 .logo {
@@ -199,32 +204,32 @@ h3{
 
 .odd-work-card {
     background-color:  FFF;
-    padding: 6rem 5rem 4rem 7rem;
-    gap: 6rem;
+    justify-content: space-between;
+    padding: 10rem 5rem 4rem 7rem;
+    gap: 6rem; 
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-template-rows: (2,auto);
     grid-template-areas: 
-    "cardPhoto"
-    "cardInfo";
+    'cardPhoto cardInfo';
 }
-.right-odd-card{
-    grid-area:cardPhoto;
+.right-odd-card {
+    grid-area: cardPhoto;
 }
-.left-odd-card{
-    grid-area:cardInfo
+.left-odd-card {
+    grid-area: cardInfo;
 }
 
 
 .even-work-card {
     background-color: #b5e0f8;
-    justify-content: space-evenly;
-    padding: 6rem 5rem 4rem 7rem;
+    justify-content: space-between;
+    padding: 10rem 5rem 4rem 7rem;
     gap:6rem;
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
 }
+
 .btn-push-project-odd {
     text-indent: -9999em;
 } 
@@ -307,7 +312,18 @@ footer {
     .hero-into-text{
         font-size: 30px;
     }
-
+    .odd-work-card {
+        background-color:  FFF;
+        justify-content: space-between;
+        padding: 6rem 5rem 4rem 7rem;
+        gap: 6rem; 
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-template-rows: (2,auto);
+        grid-template-areas: 
+        'cardPhoto' 
+        'cardInfo';
+    }
 }
 
 
