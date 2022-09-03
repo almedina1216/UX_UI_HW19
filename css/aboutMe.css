@@ -226,6 +226,17 @@ footer {
 
     #flex-container {
     flex-direction: column;
+    }
+    #mountain-image {
+        width: 80vw;
+        height: auto;
+    }
+    #aboutMe {
+        grid-area: aboutMe;
+        width: 65vw;
+        left: 5%;
+        height: auto;
+        align-content: center;
     } 
 }
 

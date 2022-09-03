@@ -28,11 +28,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-#FCOCmockup{
-
-}
-
-
 .logo {
     height: 100%;
     cursor: pointer;
@@ -107,7 +102,7 @@ h3{
 }
 
 #hero-intro-container {
-    width: 98.9vw;
+    width: 100vw;
     position: absolute;
     padding-top: 12%;
     padding-left: 10%;
@@ -172,15 +167,15 @@ h3{
     flex-direction: column;    
 }
 #FCOCmockup{
-    width: 40vw;
+    width: 30vw;
     height: auto;
 }
 #EverGreenmockup{
-    width: 40vw;
+    width: 30vw;
     height: auto;
 }
 #DOE{
-    width: 40vw;
+    width: 30vw;
     height:auto;
 }
 
@@ -323,6 +318,18 @@ footer {
         grid-template-areas: 
         'cardPhoto' 
         'cardInfo';
+    }
+    #FCOCmockup{
+        width: 55vw;
+        height: auto;
+    }
+    #EverGreenmockup{
+        width: 55vw;
+        height: auto;
+    }
+    #DOE{
+        width: 55vw;
+        height:auto;
     }
 }
 
