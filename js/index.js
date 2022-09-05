@@ -34,4 +34,12 @@ $(document).ready(function(){
       else {
           menuList.style.maxHeight = "0px";
       }
+
+      $("btn-push-project").hover(function(){
+        $(this).css("background-color", "blue");
+        }, function(){
+        $(this).css("background-color", "pink");
+      });
+
+      $( btn-push-project ).on( "mouseenter mouseleave", handlerInOut );
   }

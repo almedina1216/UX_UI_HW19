@@ -15,7 +15,7 @@
         <nav>
             <ul id = "menuList">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Work</a></li>
+            <li><a href="#my-work-container">Work</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Resume</a></li>
             </ul> 
@@ -49,7 +49,7 @@
                             </div>
                             <p class="cardText"> I thrive in finding solutions to problems through user interviews and insights. 
                             </p>
-                            <img src="images/research.png">
+                            <img id="cardimage" src="images/research.png">
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                                 <h3> User Interface Design</h3>
                             </div>
                             <p class="cardText"> Understanding what the user needs is the first thing I think about when creating a user interface. </p>
-                            <img src="images/design.png">
+                            <img id="cardimage" src="images/design.png">
                         </div>
                     </div>
 
@@ -68,8 +68,8 @@
                             <div class="heading">
                                 <h3> Web Development</h3>
                             </div>
-                            <p class="cardText"> Experienced in bringing my designs to life using HTML,CSS, JavaScript, and Bootstrap. </p>
-                            <img src="images/dev.png">
+                            <p class="cardText"> Experienced in bringing designs to life using HTML,CSS, JavaScript, and Bootstrap. </p>
+                            <img id="cardimage" src="images/dev.png">
                         </div>                      
                     </div>
                 </div>
@@ -103,5 +103,10 @@
             }
         }
     </script>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "link";
+        }
+        </script>
 
 </body>

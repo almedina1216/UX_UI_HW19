@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Adriana's Portfolio Page</title>
+
 </head>
 
 <body>
@@ -25,6 +26,7 @@
             <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
 
+
         <main>
             <section id="hero">
                 <div class="hero-card">
@@ -33,9 +35,12 @@
                         <div id="hero-intro-text">
                             <h1 id="hero-intro">Hi! I'm Adriana.</h1>
                             <p id="hero-sentence">I enjoy solving problems through design.</p>
-                        </div>
-                        <div id="btn-intro">
-                            <button id="btn-push" href="#none" aria-label="See My Work"></button>
+                        </div>  
+
+                        <div class="container">
+                            <div class="buttons">
+                                <a href="#my-work-container"class= "btn btn-1">See My Work</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,9 +54,10 @@
                         <p class="card-desc">Redesign Friendship Circle of Colorado site for desktop and mobile to
                             foster growth and enagement amongst target users.</p>
                             <div id="btn-intro">
-                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
+                                <a href="https://almedina1216.github.io/UX_UI_HW20/" class="btn btn-2">View Project</a>
                             </div>
                     </div>
+                    
                     <div class="right-odd-card">
                         <img id="FCOCmockup" src="images/friendshipcirclehomepg.png" alt="">
                     </div>
@@ -65,9 +71,9 @@
                         <h2 class="sub-header">Government</h2>
                         <h1 class="card-title">US Deparment of Education</h1>
                         <p class="card-desc">Redesign a government webpage for improved user experience</p>
-                            <div id="btn-intro">
-                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
-                            </div>
+                        <div id="btn-intro">
+                            <a href="#" class="btn btn-2">View Project</a>
+                        </div>
                     </div>
                 </div>
 
@@ -78,7 +84,7 @@
                         <p class="card-desc">Create a mobile app that helps users track their positive impact on the
                             environment.</p>
                             <div id="btn-intro">
-                                <button id="btn-push-project" href="#none" aria-label="View Project"></button>
+                                <a href="#" class="btn btn-2">View Project</a>
                             </div>
                     </div>
                     <div class="right-odd-card">
@@ -90,7 +96,7 @@
         <footer>
             <ul id="links-footer">
                 <li class="nav-links bold-links"><a href="#my-work-container">Work</a></li>
-                <li class="nav-links bold-links"><a href="https://www.w3schools.com">About</a></li>
+                <li class="nav-links bold-links"><a href="https://almedina1216.github.io/UX_UI_HW19/aboutMe.html">About</a></li>
                 <li class="nav-links bold-links"><a href="https://www.w3schools.com">Contact</a></li>
             </ul>
             <div id="footer-year">2022</div>
@@ -98,6 +104,26 @@
     </div>
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js""></script>
+
+    <script>
+        $(document).ready(function(e){
+         $('.btn').on('mouseenter', function(e){
+            x = e.pageX - $(this).offset().left;
+            y= e.pageY - $(this).offset().top;
+            $(this).find('span').css({top:y, left:x})
+        })
+        $('.btn').on('mouseout', function(e){
+            x = e.pageX-$(this).offset().left;
+            y= e.pageY-$(this).offset().top;
+            $(this).find('span').css({top:y, left:x})
+        })
+    })       
+
+    })
+    </script>
 </html>
